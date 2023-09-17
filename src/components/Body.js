@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Login from './Login'
 import Browse from './Browse'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 
+
 const Body = () => {
+  
   const appRouter=createBrowserRouter([
   //   {
   //   path:"/", // error router inside the router
@@ -16,6 +18,10 @@ const Body = () => {
     path:"/",
     element:<Login/>
   }])
+
+
+
+
   return (
     <div>
     <RouterProvider router={appRouter}/>   
